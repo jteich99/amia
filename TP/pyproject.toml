@@ -1,0 +1,25 @@
+[project]
+name = "tp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ipywidgets>=8.1.7",
+    "jupyter>=1.1.1",
+    "numpy>=2.3.3",
+    "pandas>=2.3.2",
+    "scikit-learn>=1.7.2",
+    "scipy>=1.16.2",
+    "tqdm>=4.67.1",
+]
+
+[tool.uv.workspace]
+members = [
+    "tp-amia",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1",
+]
